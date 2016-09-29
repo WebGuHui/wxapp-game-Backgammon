@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
+
+<!-- <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" mode="aspectFill" />
+    </swiper-item>
+  </block>
+</swiper>
+<button bindtap="changeIndicatorDots"> indicator-dots </button>
+<button  bindtap="jump">123</button>
+<navigator url="/pages/logs/logs?title=navigate" hover-class="navigator-hover">跳转到新页面</navigator>
+<button bindtap="changeAutoplay"> autoplay </button>
+<slider bindchange="intervalChange" show-value min="500" max="2000"/> interval
+<slider bindchange="durationChange" show-value min="1000" max="10000"/> duration
+
+
+
+<view class="container">
+  <block  wx:for="{{userList}}">
+    <view class="label">{{index}}
+      <view class="name" >{{item}}</view>
+      <image class="headimg" src="http://dayu.oa.com/avatars/{{item}}/profile.jpg" mode="aspectFit"> </image>
+    </view>
+  </block>
+</view>
+
+<button type="default" bindtap="actionSheetTap">弹出action sheet</button>
+<action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+  <view class="box">
+	  <block wx:for="{{actionSheetItems}}">
+	    <view class="item" bindtap="bindItemTap" data-name="{{item}}">{{item}}</view>
+	  </block>
+  </view>
+  <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+</action-sheet> -->

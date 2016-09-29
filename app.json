@@ -1,0 +1,20 @@
+{
+  "pages":[
+    "pages/demo/demo",
+    "pages/game/game",
+    "pages/logs/logs",
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "骨灰的demo",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":"true"
+  },
+  "tabBar": {
+    "color" : "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "white"
+  }
+}
