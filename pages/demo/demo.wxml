@@ -3,7 +3,10 @@
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
   </view>
+  <!--<audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" action="{{action}}" controls loop></audio>-->
   <view class="usermotto">
     <text class="user-motto" bindtap="startGame">{{motto}}</text>
   </view>
 </view>
+
+

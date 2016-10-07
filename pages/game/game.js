@@ -139,6 +139,7 @@ Page({
 		gameTxt:'',
 	},
 	onLoad(options){
+		console.log('onload');
 		var that = this;
 		wx.getSystemInfo({
 			success(res){
@@ -147,8 +148,14 @@ Page({
 				})
 			}
 		});
+		wx.playBackgroundAudio({
+			dataUrl: 'http://183.61.26.52/m10.music.126.net/20160930151214/9ac5ef51949f4e1fa7595da52c974425/ymusic/93fa/3be9/40dd/c5bded1bc6d788af377c93a461504c72.mp3?wshc_tag=0&wsts_tag=57ee0a72&wsid_tag=e111623&wsiphost=ipdbm',
+			title: '12',
+			coverImgUrl: ''
+		});
 	},
 	onReady() {
+		console.log('onready');
 		this.context = wx.createContext();
 		// wx.chooseImage({
 		// 	success: function(res) {
@@ -176,6 +183,9 @@ Page({
 		this.setData({
 			modalHidden: true
 		})
+	},
+	showData(){
+		console.log(over);
 	},
 	reload(){
 		wx.redirectTo({

@@ -1,14 +1,8 @@
 <view class="name">{{userInfo.nickname}}</view>
-
-<canvas id="canvas"
-canvas-id="firstCanvas"
-bindtap="go"
-></canvas>
-
+<canvas id="canvas" canvas-id="firstCanvas" bindtap="go"></canvas>
 <modal class="modal" hidden="{{modalHidden}}" no-cancel bindconfirm="modalChange">
-    <view> {{gameTxt}} </view>
+    <view>{{gameTxt}}</view>
 </modal>
-
 <view class="usermotto">
     <text class="user-motto" bindtap="reload">再来一把啊</text>
 </view>
